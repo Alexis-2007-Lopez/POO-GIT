@@ -1,6 +1,6 @@
 package DemoInterface;
 
-public class Circulo implements Figura{
+public class Circulo implements Figura {
     private float radio;
     private float x;
     private float y;
@@ -48,6 +48,7 @@ public class Circulo implements Figura{
         this.y = y;
     }
 
-    public float calcularArea(){
-        return (float)Math.PI*(this.radio * this.radio);    }
+    public float calcularArea() {
+        return (float) Math.PI * (this.radio * this.radio);
+    }
 }

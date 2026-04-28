@@ -1,6 +1,6 @@
 package DemoInterface;
 
-public class Cuadrado implements Figura{
+public class Cuadrado implements Figura {
     private float largo;
     private float ancho;
     private float x;
@@ -57,6 +57,6 @@ public class Cuadrado implements Figura{
 
     @Override
     public float calcularArea() {
-        return this.ancho*this.largo;
+        return this.ancho * this.largo;
     }
 }
