@@ -5,13 +5,10 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
 public class VentanaUno extends JFrame {
     private JLabel etiqueta;
     private JTextField entrada;
     private JButton boton;
-
-
     public VentanaUno() {
         super("Mi primer ventana Swing");
         this.getContentPane().setLayout(new GridLayout(3,3));
@@ -25,16 +22,11 @@ public class VentanaUno extends JFrame {
 
         boton.setOpaque(true);         //Background on
         boton.setBorderPainted(false);
-
         boton.setSize(100,100);
-
         etiqueta.setForeground(new Color(0,0,0));
         etiqueta.setBackground(new Color(222,184,135));
-
         etiqueta.setOpaque(true);
-
         this.getContentPane().repaint();
-
         getContentPane().add(etiqueta,0);
         getContentPane().add(entrada,1);
         getContentPane().add(boton,2);
@@ -43,7 +35,6 @@ public class VentanaUno extends JFrame {
         setSize(600,400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-
         boton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -60,7 +51,6 @@ public class VentanaUno extends JFrame {
                 System.out.println("Hola desde el click al cuadro dialogo");
             }
         });
-
         entrada.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -69,9 +59,5 @@ public class VentanaUno extends JFrame {
                 System.out.println("codigo de teclado : "+ e.getKeyCode());
             }
         });
-
-
-
-
     }
 }

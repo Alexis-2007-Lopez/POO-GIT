@@ -27,10 +27,10 @@ public class VentanaDos extends JFrame {
         combo = new JComboBox<Object>();
 
         ArrayList<String> nombres = new ArrayList<>();
-        nombres.add("Ari");
-        nombres.add("Alde");
-        nombres.add("Alex");
-        nombres.add("Angel");
+        nombres.add("Darina");
+        nombres.add("Emily");
+        nombres.add("Karla");
+        nombres.add("Vanessa");
         ComboBoxModel<Object> modelo = new ComboNombres(nombres);
         combo.setModel(modelo);
 
